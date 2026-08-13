@@ -43,898 +43,768 @@ const CATEGORY_KEYWORDS = {
   'STANDING RULES / SYSTEMS': ['skill file', 'em dash', 'brand colour', 'brand color', 'carousel skill', 'proofread', 'funnel-content', 'standing rule', 'hook'],
 };
 
-// ---------- Seed data (parsed from the 13 Aug 2026 master action plan) ----------
+// ---------- Seed data (parsed from Amro's 12 Aug 2026 export, after his review pass) ----------
 
 const DEFAULT_TASKS = [
   {
-    "id": "1786574150700-w7y36",
+    "id": "1786578217604-3m25x",
     "text": "Test video-calculator-fixed.html on a Squarespace staging page: click through Music, Event, Social, and Real Estate flows end to end.",
     "category": "URGENT / BUGS",
     "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
+    "assignee": "Amro",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150700
+    "createdAt": 1786578217603
   },
   {
-    "id": "1786574150700-9wwj5",
+    "id": "1786578217604-ouflz",
     "text": "Once verified, push the calculator live and confirm it is the version actually running in the Squarespace Code Block on /my-video-calculator. It was rebuilt several times this session, so confirm the live site has the final version, not an earlier one. This is the fix for the bug that was silently underquoting leads (not just Gerry's), so it is the single highest priority item on this whole list.",
     "category": "URGENT / BUGS",
     "subcategory": null,
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150701
+    "createdAt": 1786578217604
   },
   {
-    "id": "1786574150700-zkkvi",
+    "id": "1786578217604-d5qdg",
     "text": "Correct Whole Night's view count everywhere it still shows 750K or 753K: Instagram bio draft, captions, the deck, and the checklist PDF. Real number is 1,046,651, use \"1M+\" as the standard rounded figure. This was deliberately deferred until after the origin story script, that work is done, so this is now due.",
     "category": "URGENT / BUGS",
     "subcategory": null,
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150702
+    "createdAt": 1786578217605
   },
   {
-    "id": "1786574150700-cxq0c",
+    "id": "1786578217604-xr7wc",
     "text": "Confirm the correct artist and title for \"Farside - Drop\" before publishing caption 8 in the reaction video series. Could not verify this credit independently.",
     "category": "URGENT / BUGS",
     "subcategory": null,
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150703
+    "createdAt": 1786578217606
   },
   {
-    "id": "1786574150700-t8pva",
+    "id": "1786578217604-vh5ez",
     "text": "Decide whether Rubber Johnny content can be used publicly at all. Source video has body horror and drug references that likely will not clear platform content policies.",
     "category": "URGENT / BUGS",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150704
+    "createdAt": 1786578217607
   },
   {
-    "id": "1786574150700-hhnuu",
+    "id": "1786578217604-iho4t",
     "text": "Send (or confirm already sent) the drafted message to Fadi to book his BTS and testimonial interview.",
     "category": "CLIENT FOLLOW-UPS",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150705
+    "createdAt": 1786578217608
   },
   {
-    "id": "1786574150700-lg6rt",
+    "id": "1786578217604-rfowd",
     "text": "Send (or confirm already sent) the drafted message to Emre to book his testimonial interview for Kovala.",
     "category": "CLIENT FOLLOW-UPS",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150706
+    "createdAt": 1786578217609
   },
   {
-    "id": "1786574150700-u7e4a",
-    "text": "Confirm with Gerry or Danny whether the coastal shoot location is Clovelly or Coogee. This decides the Randwick Council permit application and whether the location scouting fee (+$400) applies.",
-    "category": "CLIENT FOLLOW-UPS",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150707
-  },
-  {
-    "id": "1786574150700-zn9bc",
-    "text": "Start the PLI insurance and Randwick Council notification/permit process for the coastal shoot once the location above is confirmed. First confirm whether 618 Media already carries PLI as standing business cover or whether this needs arranging fresh for this job. Mandatory per the brief, likely has lead time before the October 2026 shoot date, so start this as soon as possible rather than waiting on the quote below.",
-    "category": "CLIENT FOLLOW-UPS",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150708
-  },
-  {
-    "id": "1786574150700-myqwl",
-    "text": "Price the archival footage integration work manually. No mechanism for this in the calculator yet.",
-    "category": "CLIENT FOLLOW-UPS",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150709
-  },
-  {
-    "id": "1786574150700-v3wlo",
-    "text": "Decide whether the scouting fee applies now that the location question above is resolved.",
-    "category": "CLIENT FOLLOW-UPS",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150710
-  },
-  {
-    "id": "1786574150700-guh6u",
+    "id": "1786578217604-he12r",
     "text": "Send Gerry the itemised quote his brief asked for: pre-production/crew day rates, post-production rates, and travel/equipment fees broken out separately, not a single lump number. Base estimate is $9,100 to $12,300 (Music, Mid tier, drone, multiple locations, crowd, top headcount bracket, no rush), plus the PLI/permit and archival costs from the items above.",
     "category": "CLIENT FOLLOW-UPS",
     "subcategory": null,
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150711
+    "createdAt": 1786578217610
   },
   {
-    "id": "1786574150700-dcyk8",
-    "text": "Build the creative recipe for each of the 5 618 Session music styles (performance, narrative, conceptual, visualiser, behind the scenes): shot list pattern, number of setups, coverage approach.",
+    "id": "1786578217604-0jq83",
+    "text": "Build Pre-release and Post Release Product into our music video calculator",
     "category": "CALCULATOR / PRODUCT",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150712
+    "createdAt": 1786578217611
   },
   {
-    "id": "1786574150700-h3p4l",
-    "text": "Decide on naming and branding for the package (working name: The 618 Session).",
-    "category": "CALCULATOR / PRODUCT",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150713
-  },
-  {
-    "id": "1786574150700-t0jyx",
-    "text": "Once the 618 Session recipes are built, update the Music tier scope descriptions on the calculator to match the real rule: up to 2 locations equals 1 shoot day included, 3 to 4+ locations means a second shoot day at +$900.",
-    "category": "CALCULATOR / PRODUCT",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150714
-  },
-  {
-    "id": "1786574150700-ellps",
-    "text": "Decide whether the multi-day slider should ever ask for an exact day count beyond \"5 or more,\" or whether the current band is enough.",
-    "category": "CALCULATOR / PRODUCT",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150715
-  },
-  {
-    "id": "1786574150700-dl4lq",
-    "text": "Decide whether location scouting should be offered as an option in flows beyond Music and Corporate.",
-    "category": "CALCULATOR / PRODUCT",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150716
-  },
-  {
-    "id": "1786574150700-d3rgg",
-    "text": "Decide whether the 30-minute call dollar threshold (currently $1,500) should move now that most tiers already start above that.",
-    "category": "CALCULATOR / PRODUCT",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150717
-  },
-  {
-    "id": "1786574150700-d2j2n",
+    "id": "1786578217604-zlk6u",
     "text": "Switch to Professional Dashboard if not already done. Needed for Insights and the Inspiration tool used to find trending content.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "INSTAGRAM PROFILE SETUP",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150718
+    "createdAt": 1786578217612
   },
   {
-    "id": "1786574150700-qiqo1",
+    "id": "1786578217604-zf8ff",
     "text": "Update the Instagram name and bio using the drafted copy block, with the corrected Whole Night view count from the Urgent section above.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "INSTAGRAM PROFILE SETUP",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150719
+    "createdAt": 1786578217613
   },
   {
-    "id": "1786574150700-g3lwu",
+    "id": "1786578217604-fzdjk",
     "text": "Set the profile link to the Whole Night YouTube video. Swap to the landing page once it is built with the real sales video and process video.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "INSTAGRAM PROFILE SETUP",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150720
+    "createdAt": 1786578217614
   },
   {
-    "id": "1786574150700-hb3cy",
+    "id": "1786578217604-92157",
     "text": "Pin Whole Night, or its best cutdown, as the top grid post.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "INSTAGRAM PROFILE SETUP",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150721
+    "createdAt": 1786578217615
   },
   {
-    "id": "1786574150700-njg82",
+    "id": "1786578217604-uic8v",
     "text": "Create three Highlights: Behind the Scenes, Results, Process. Cover icons are already made and delivered as PNGs.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "INSTAGRAM PROFILE SETUP",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150722
+    "createdAt": 1786578217616
   },
   {
-    "id": "1786574150700-cds15",
+    "id": "1786578217604-m1pm0",
     "text": "Decide whether Stories carry their own call to action (link sticker to Fadi's video or a DM prompt) or stay CTA free like the Reels.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "INSTAGRAM PROFILE SETUP",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150723
+    "createdAt": 1786578217617
   },
   {
-    "id": "1786574150700-hg7bq",
-    "text": "Video 1, Amro's origin story (TOFU). Beat sheet and 20 question interview PDF are ready. Film with Daniel asking the questions, then cut both a longer About page version and a shorter Reel version.",
+    "id": "1786578217604-0m8su",
+    "text": "Edit Amro and Danny Origin Story - use G Production as an example for this edit (https://www.instagram.com/gstudios_centralcoast/)",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "SIX CORE VIDEOS",
-    "assignee": "Unassigned",
+    "assignee": "Daniel",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150724
+    "createdAt": 1786578217618
   },
   {
-    "id": "1786574150700-lemlr",
+    "id": "1786578217604-vo9jo",
     "text": "Video 2, reaction or hero figure post (TOFU). Pick a trending big budget video first using the checklist methods (Instagram Inspiration tool, Reels tab repetition, trending audio arrow, hashtag search sorted by Recent, TikTok Creative Center, follow @creators).",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "SIX CORE VIDEOS",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150725
+    "createdAt": 1786578217619
   },
   {
-    "id": "1786574150700-dppea",
-    "text": "Video 3, Whole Night behind the scenes (MOFU mechanism breakdown).",
+    "id": "1786578217604-hlled",
+    "text": "Film our reaction or breakdown of Whole Night (this is Middle of Funnel video)",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "SIX CORE VIDEOS",
-    "assignee": "Unassigned",
+    "assignee": "Both",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150726
+    "createdAt": 1786578217620
   },
   {
-    "id": "1786574150700-9vada",
+    "id": "1786578217604-40v4c",
     "text": "Video 4, process explainer, \"what we ask before we pick up a camera\" (MOFU).",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "SIX CORE VIDEOS",
-    "assignee": "Unassigned",
+    "assignee": "Both",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150727
+    "createdAt": 1786578217621
   },
   {
-    "id": "1786574150700-wxoal",
-    "text": "Video 5, Fadi client interview (BOFU). Depends on the Fadi outreach message above and a date locked in.",
+    "id": "1786578217604-raukk",
+    "text": "Film Fadi client interview (BOFU).",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "SIX CORE VIDEOS",
-    "assignee": "Unassigned",
+    "assignee": "Both",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150728
+    "createdAt": 1786578217622
   },
   {
-    "id": "1786574150700-l4gro",
-    "text": "Video 6, proof and results post (BOFU). Screen record the real YouTube analytics, using the corrected view count.",
-    "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
-    "subcategory": "SIX CORE VIDEOS",
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150729
-  },
-  {
-    "id": "1786574150700-8ho12",
+    "id": "1786578217604-79167",
     "text": "Footage backfill: pull five to eight clips from past projects to fill the grid across weeks one and two while new content is being made.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "SIX CORE VIDEOS",
-    "assignee": "Unassigned",
+    "assignee": "Amro",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150730
+    "createdAt": 1786578217623
   },
   {
-    "id": "1786574150701-vu85e",
+    "id": "1786578217604-d41j9",
     "text": "Danny answers his 14 questions in writing first, same process Amro went through, so the eventual script is built from his real answers and not generic placeholders.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "ORIGIN STORY, DANNY",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150731
+    "createdAt": 1786578217624
   },
   {
-    "id": "1786574150701-x7xi9",
+    "id": "1786578217604-7kp7h",
     "text": "Once answered, rebuild his questions into an accurate beat sheet the same way Amro's was built.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "ORIGIN STORY, DANNY",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150732
+    "createdAt": 1786578217625
   },
   {
-    "id": "1786574150701-zaav9",
+    "id": "1786578217604-gcalc",
     "text": "Decide whether Rugrag podcast material is worth including in Danny's origin story content. Optional, his call once he answers the questions.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "ORIGIN STORY, DANNY",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150733
+    "createdAt": 1786578217626
   },
   {
-    "id": "1786574150701-7ceua",
+    "id": "1786578217604-yehhc",
     "text": "Film the 10 question joint casual chat. Goal is chemistry and friendship, not chronology, let it run loose and let tangents happen.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "JOINT CONTENT, AMRO AND DANNY",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150734
+    "createdAt": 1786578217627
   },
   {
-    "id": "1786574150701-08u76",
+    "id": "1786578217604-7aydf",
     "text": "Film the 13 question intercut TOFU introduction, both answering separately so the edit can cut between them. If time is short, prioritise: what were you doing before this became a real job, what do you actually disagree about creatively, and finish the sentence \"we make videos because.\"",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "JOINT CONTENT, AMRO AND DANNY",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150735
+    "createdAt": 1786578217628
   },
   {
-    "id": "1786574150701-bo4sf",
+    "id": "1786578217604-isu55",
     "text": "Film and edit the colour grading before/after reel using the rebuilt overlay, sized correctly for a true 1080x1920 frame this time, not the undersized placeholder from the first attempt.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "COLOUR GRADING AND THE FADI CLIP",
-    "assignee": "Unassigned",
-    "status": "open",
+    "assignee": "Amro",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150736
+    "createdAt": 1786578217629
   },
   {
-    "id": "1786574150701-n6t2s",
+    "id": "1786578217604-pbyxr",
     "text": "Post the BTS caption and the colour grading caption, both already drafted using the pain point then solution structure.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "COLOUR GRADING AND THE FADI CLIP",
-    "assignee": "Unassigned",
-    "status": "open",
+    "assignee": "Amro",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150737
+    "createdAt": 1786578217630
   },
   {
-    "id": "1786574150701-8tfhi",
+    "id": "1786578217604-1ftvy",
     "text": "Pick final cut clips from the reel editing guide for each of the 9 segments.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "REACTION VIDEO SERIES (9-PART, ASAP ROCKY THROUGH BEASTIE BOYS)",
-    "assignee": "Unassigned",
-    "status": "open",
+    "assignee": "Amro",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150738
+    "createdAt": 1786578217631
   },
   {
-    "id": "1786574150701-amtix",
+    "id": "1786578217604-eqkum",
     "text": "Publish the ASAP Rocky two-part cut with its own captions: Video 1 on the AI reveal hook, Video 2 on the rewatch and Bosch comparison hook.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "REACTION VIDEO SERIES (9-PART, ASAP ROCKY THROUGH BEASTIE BOYS)",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150739
+    "createdAt": 1786578217632
   },
   {
-    "id": "1786574150701-bptti",
-    "text": "Swap the fuller Beastie Boys caption into the main 9-post set, replacing the earlier shorter Sabotage caption.",
-    "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
-    "subcategory": "REACTION VIDEO SERIES (9-PART, ASAP ROCKY THROUGH BEASTIE BOYS)",
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150740
-  },
-  {
-    "id": "1786574150701-43sbd",
-    "text": "Decide whether the Beastie Boys behind the scenes caption (the $84,000 destroyed camera story) runs as its own standalone post or paired with the reaction clip.",
-    "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
-    "subcategory": "REACTION VIDEO SERIES (9-PART, ASAP ROCKY THROUGH BEASTIE BOYS)",
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150741
-  },
-  {
-    "id": "1786574150701-i2g55",
+    "id": "1786578217604-wz0j4",
     "text": "Choose between the Eyecandy style technique captions (6 reels) and the fact based credits captions (6 reels), or decide which set runs for which reel.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "ADIDAS SUPERSTAR \"HOTEL SUPERSTAR\" BREAKDOWN SERIES",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150742
+    "createdAt": 1786578217633
   },
   {
-    "id": "1786574150701-siro0",
+    "id": "1786578217604-vbeae",
     "text": "Confirm there is no rights or clearance issue posting reaction content against a branded adidas campaign before publishing.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "ADIDAS SUPERSTAR \"HOTEL SUPERSTAR\" BREAKDOWN SERIES",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150743
+    "createdAt": 1786578217634
   },
   {
-    "id": "1786574150701-8bxp8",
+    "id": "1786578217604-8k3uk",
     "text": "Verify Instagram handles for Islam Chipsy, Sven Grummel, and Nicolas Petitfrere before tagging them.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "DJ SNAKE, CAIRO EXPRESS",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150744
+    "createdAt": 1786578217635
   },
   {
-    "id": "1786574150701-eycnp",
+    "id": "1786578217604-iv5hd",
     "text": "Publish the caption with confirmed tags: djsnake, chndy underscore, birth underscore productions, 2horlogesproduction.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "DJ SNAKE, CAIRO EXPRESS",
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150745
+    "createdAt": 1786578217636
   },
   {
-    "id": "1786574150701-3trhs",
+    "id": "1786578217604-a1iym",
     "text": "Get Chef Joe's current restaurant name and location from Daniel before using the project as a live case study anywhere. The historical Nekkei, Surry Hills reference is accurate and sufficient for the origin story video as is.",
     "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": "CHEF JOE",
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150746
+    "createdAt": 1786578217637
   },
   {
-    "id": "1786574150701-o2hk4",
-    "text": "Decide the Release Plan real numbers: how many cutdowns per release, how long the post release window runs, and whether the content day is a half day or a full day.",
-    "category": "STRATEGY / BUSINESS DECISIONS",
+    "id": "1786578217604-6ig5h",
+    "text": "Film Emre Testemonials",
+    "category": "CONTENT PRODUCTION (INSTAGRAM / REELS)",
     "subcategory": null,
-    "assignee": "Unassigned",
+    "assignee": "Both",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150747
+    "createdAt": 1786578217638
   },
   {
-    "id": "1786574150701-tey33",
-    "text": "Decide the Release Plan photography bundling approach. Proposed as a separate named add on rather than folded into the core package, confirm or adjust.",
+    "id": "1786578217604-uwp1i",
+    "text": "Decide what is our \"release\" Product, the pre release post release, what does that look like",
     "category": "STRATEGY / BUSINESS DECISIONS",
     "subcategory": null,
-    "assignee": "Unassigned",
+    "assignee": "Both",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150748
+    "createdAt": 1786578217639
   },
   {
-    "id": "1786574150701-ny9sn",
-    "text": "Once numbers are confirmed, turn the Release Plan into a one page offer document.",
+    "id": "1786578217604-z5izn",
+    "text": "Once the release product is confirmed, turn the Release Plan into a one page offer document.",
     "category": "STRATEGY / BUSINESS DECISIONS",
     "subcategory": null,
-    "assignee": "Unassigned",
+    "assignee": "Amro",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150749
+    "createdAt": 1786578217640
   },
   {
-    "id": "1786574150701-8a440",
-    "text": "Hold off selling audience growth guidance as part of the Release Plan offer. Prove the funnel system on 618 Media's own account first, then use that as real evidence.",
-    "category": "STRATEGY / BUSINESS DECISIONS",
-    "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
-    "notes": "",
-    "createdAt": 1786574150750
-  },
-  {
-    "id": "1786574150701-bqm0n",
+    "id": "1786578217604-aroxh",
     "text": "Set a 6 month check-in point to see if the artist/music video focus is actually growing revenue, not just inquiries.",
     "category": "STRATEGY / BUSINESS DECISIONS",
     "subcategory": null,
-    "assignee": "Unassigned",
-    "status": "open",
+    "assignee": "Amro",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150751
+    "createdAt": 1786578217641
   },
   {
-    "id": "1786574150701-0kmyf",
+    "id": "1786578217604-84nao",
     "text": "Decide whether growing artist volume should also mean gradually raising the price floor over time, or staying at $3,000 to $4,000.",
     "category": "STRATEGY / BUSINESS DECISIONS",
     "subcategory": null,
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150752
+    "createdAt": 1786578217642
   },
   {
-    "id": "1786574150701-3zi2z",
+    "id": "1786578217604-a6lc3",
     "text": "Find out whether 618 Media currently has any recurring or retainer client relationships, or whether all current work is project based. Asked directly, not yet answered.",
     "category": "STRATEGY / BUSINESS DECISIONS",
     "subcategory": null,
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150753
+    "createdAt": 1786578217643
   },
   {
-    "id": "1786574150701-02mei",
+    "id": "1786578217604-1idds",
     "text": "Correct the carousel skill file: it still lists #E04212 as the primary orange and explicitly says never use #E5421A, which is now backwards. It also specifies Archivo Black and Barlow instead of DM Serif Display and DM Sans. Decide whether the carousel system is meant to be visually distinct from the website on purpose, or should be realigned to match confirmed brand values.",
     "category": "STANDING RULES / SYSTEMS",
     "subcategory": null,
     "assignee": "Unassigned",
-    "status": "open",
+    "status": "done",
     "notes": "",
-    "createdAt": 1786574150754
+    "createdAt": 1786578217644
   },
   {
-    "id": "1786574150701-xfpag",
+    "id": "1786578217604-b5ht6",
     "text": "Decide which caption style is the default going forward: the funnel structure (pain point, solution, signature) versus the shorter Eyecandy style, and for which content type (brand breakdown reels versus your own reaction content).",
     "category": "STANDING RULES / SYSTEMS",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150755
+    "createdAt": 1786578217645
   },
   {
-    "id": "1786574150701-v6ixt",
+    "id": "1786578217604-rp8gp",
     "text": "Run a final proofread pass for em dashes across everything already shipped. Corrected multiple times already, worth one clean sweep.",
     "category": "STANDING RULES / SYSTEMS",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150756
+    "createdAt": 1786578217646
   },
   {
-    "id": "1786574150701-9gy33",
+    "id": "1786578217604-dpef9",
     "text": "If not already installed, save the 618-funnel-content skill to the profile so future requests in this project use it automatically.",
     "category": "STANDING RULES / SYSTEMS",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150757
+    "createdAt": 1786578217647
   },
   {
-    "id": "1786574150701-apfuh",
+    "id": "1786578217604-iizy3",
     "text": "Keep the 618-funnel-content skill updated as facts change (view count, brand colour, Danny's answers once they come in), or it will hand out stale facts.",
     "category": "STANDING RULES / SYSTEMS",
     "subcategory": null,
     "assignee": "Unassigned",
     "status": "open",
     "notes": "",
-    "createdAt": 1786574150758
+    "createdAt": 1786578217648
   },
   {
-    "id": "1786574150701-fld38",
+    "id": "1786578217604-lxpv5",
     "text": "Removed all Central Coast, Erina, Gosford, Narara, Tuggerah, and Terrigal references from location suggestions",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150759
+    "createdAt": 1786578217649
   },
   {
-    "id": "1786574150701-ibgve",
+    "id": "1786578217604-kqm6j",
     "text": "Fixed the dead end bug where a custom \"something else\" answer never unlocked the Next button",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150760
+    "createdAt": 1786578217650
   },
   {
-    "id": "1786574150701-d2qtv",
+    "id": "1786578217604-gyc3a",
     "text": "Converted the calculator into a proper Squarespace fragment, scoped under .aw, no DOCTYPE/html/head/body",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150761
+    "createdAt": 1786578217651
   },
   {
-    "id": "1786574150701-2c6z2",
+    "id": "1786578217605-84bkn",
     "text": "Fixed brand colours to #E5421A and fonts to DM Serif Display / DM Sans (was running on the old #E04212 and Barlow)",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150762
+    "createdAt": 1786578217652
   },
   {
-    "id": "1786574150701-t3u0n",
+    "id": "1786578217605-o1jia",
     "text": "Fixed a self-XSS hole on the confirmation screen (name/email were going into innerHTML unescaped)",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150763
+    "createdAt": 1786578217653
   },
   {
-    "id": "1786574150701-0ht9p",
+    "id": "1786578217605-c3v6b",
     "text": "Fixed dollar formatting to use en-AU locale explicitly",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150764
+    "createdAt": 1786578217654
   },
   {
-    "id": "1786574150701-nkt4s",
+    "id": "1786578217605-ppvub",
     "text": "Removed the Promo and \"Something Else\" categories entirely",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150765
+    "createdAt": 1786578217655
   },
   {
-    "id": "1786574150701-44jki",
+    "id": "1786578217605-gz0df",
     "text": "Estimate now shows as a range, not a single number (tier base to +35 percent)",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150766
+    "createdAt": 1786578217656
   },
   {
-    "id": "1786574150701-0wn02",
+    "id": "1786578217605-c4s7r",
     "text": "Vehicle rigging, multiple locations, and green screen/VFX now force the 30 minute project call regardless of price",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150767
+    "createdAt": 1786578217657
   },
   {
-    "id": "1786574150701-x8lsa",
+    "id": "1786578217605-pbjxq",
     "text": "Location and vibe/tone questions can no longer be skipped",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150768
+    "createdAt": 1786578217658
   },
   {
-    "id": "1786574150701-kav1a",
+    "id": "1786578217605-zm2rq",
     "text": "Added a multi-day slider (1 to 5+ days) and an on-camera headcount slider",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150769
+    "createdAt": 1786578217659
   },
   {
-    "id": "1786574150701-sqxtn",
+    "id": "1786578217605-z7n5s",
     "text": "Fixed the core pricing bug: every complexity answer now actually affects the estimate shown, regardless of which price tier gets clicked. This was the root cause of the Gerry Byrne underquote and the \"pages weren't connected\" bug flagged separately",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150770
+    "createdAt": 1786578217660
   },
   {
-    "id": "1786574150701-neamr",
+    "id": "1786578217605-tup53",
     "text": "Added a 15 percent rush surcharge with a plain on-screen note the moment a rush qualifying timeline is picked",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150771
+    "createdAt": 1786578217661
   },
   {
-    "id": "1786574150701-gb3ob",
+    "id": "1786578217605-x2355",
     "text": "Added a note on the results screen telling clients the number reflects everything selected and pointing them to the form or a call",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150772
+    "createdAt": 1786578217662
   },
   {
-    "id": "1786574150701-nzsky",
+    "id": "1786578217605-86wu4",
     "text": "Decided out of scope for the calculator: hired actors/extras, venue permits (handled directly per client), music licensing (already included in standard scope)",
     "category": "DONE",
     "subcategory": "CALCULATOR FIXES",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150773
+    "createdAt": 1786578217663
   },
   {
-    "id": "1786574150701-lzc6k",
+    "id": "1786578217605-6zbo2",
     "text": "Root cause of the broken $2,000 to $2,700 estimate found and fixed in the calculator",
     "category": "DONE",
     "subcategory": "GERRY BYRNE / SYDNEY MALE CHOIR (PROGRESS SO FAR)",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150774
+    "createdAt": 1786578217664
   },
   {
-    "id": "1786574150701-fh10s",
+    "id": "1786578217605-4nvao",
     "text": "Outreach sent: call attempted, follow up text sent, two follow up emails sent",
     "category": "DONE",
     "subcategory": "GERRY BYRNE / SYDNEY MALE CHOIR (PROGRESS SO FAR)",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150775
+    "createdAt": 1786578217665
   },
   {
-    "id": "1786574150701-o0jch",
+    "id": "1786578217605-0xd07",
     "text": "Full production brief and creative storyboard received and reviewed",
     "category": "DONE",
     "subcategory": "GERRY BYRNE / SYDNEY MALE CHOIR (PROGRESS SO FAR)",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150776
+    "createdAt": 1786578217666
   },
   {
-    "id": "1786574150702-lqllc",
+    "id": "1786578217605-bhltj",
     "text": "Estimate calculated against the actual brief: $9,100 to $12,300",
     "category": "DONE",
     "subcategory": "GERRY BYRNE / SYDNEY MALE CHOIR (PROGRESS SO FAR)",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150777
+    "createdAt": 1786578217667
   },
   {
-    "id": "1786574150702-eqkj6",
+    "id": "1786578217605-kp46p",
     "text": "Built and packaged the 618-tool-building skill (verify_tool.py and verify_logic.js), proven against real regressions including a reconstruction of the exact Gerry Byrne bug",
     "category": "DONE",
     "subcategory": "TOOLS AND SPREADSHEETS",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150778
+    "createdAt": 1786578217668
   },
   {
-    "id": "1786574150702-cd99h",
+    "id": "1786578217605-stwp3",
     "text": "Built 618_pricing_review.xlsx for Amro and Danny to review together, all tiers, add ons, and pricing logic with live formulas",
     "category": "DONE",
     "subcategory": "TOOLS AND SPREADSHEETS",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150779
+    "createdAt": 1786578217669
   },
   {
-    "id": "1786574150702-o4m32",
+    "id": "1786578217605-cd20o",
     "text": "Reviewed with Danny, Gym tier raised to 1200/1700/2500, applied back into the calculator and reverified",
     "category": "DONE",
     "subcategory": "TOOLS AND SPREADSHEETS",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150780
+    "createdAt": 1786578217670
   },
   {
-    "id": "1786574150702-obfut",
+    "id": "1786578217605-smk9x",
     "text": "Specialisation decided: 618's identity now centers on music video, specifically independent/emerging artists, using the funnel already built (Instagram content, DM templates, reaction videos)",
     "category": "DONE",
     "subcategory": "STRATEGY",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150781
+    "createdAt": 1786578217671
   },
   {
-    "id": "1786574150702-vvm3i",
+    "id": "1786578217605-kp7pv",
     "text": "Decided to keep Gym, Corporate, Real Estate, and Social live on the calculator and in SEO content, not the focus but not cut either",
     "category": "DONE",
     "subcategory": "STRATEGY",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150782
+    "createdAt": 1786578217672
   },
   {
-    "id": "1786574150702-r8l7u",
+    "id": "1786578217605-eb90i",
     "text": "The 618 Session concept decided: fixed format built around the 5 existing music_style options; up to 2 locations equals 1 shoot day included, 3 to 4+ locations means a second shoot day at +$900",
     "category": "DONE",
     "subcategory": "STRATEGY",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150783
+    "createdAt": 1786578217673
   },
   {
-    "id": "1786574150702-zcfnj",
+    "id": "1786578217605-pbzhj",
     "text": "Amro's origin story beat sheet and 20 question interview PDF completed (this was the gate on the Whole Night view count fix, now cleared)",
     "category": "DONE",
     "subcategory": "CONTENT / WORKFLOW",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150784
+    "createdAt": 1786578217674
   },
   {
-    "id": "1786574150702-2d2bd",
+    "id": "1786578217605-1cdeb",
     "text": "Standing rule confirmed: Claude responses for this project come back in caption format unless told otherwise",
     "category": "DONE",
     "subcategory": "CONTENT / WORKFLOW",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150785
+    "createdAt": 1786578217675
   },
   {
-    "id": "1786574150702-nl102",
+    "id": "1786578217605-4mzpq",
     "text": "Decided: opening line for Amro's origin story video is his own stated line, hook intentionally skipped as an exception, not an oversight",
     "category": "DONE",
     "subcategory": "CONTENT / WORKFLOW",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150786
+    "createdAt": 1786578217676
   },
   {
-    "id": "1786574150702-nnowa",
+    "id": "1786578217605-4ozgh",
     "text": "Decided: the PR and immigration story stays out of the origin story video on purpose, to be developed as its own separate video later",
     "category": "DONE",
     "subcategory": "CONTENT / WORKFLOW",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150787
+    "createdAt": 1786578217677
   },
   {
-    "id": "1786574150702-m52co",
+    "id": "1786578217605-ux08k",
     "text": "Standing rules confirmed and in effect: every caption defaults to pain point first then 618 Media's approach as the solution then signature and hashtags; every script or Reel opens with one of the 10 approved hooks unless an explicit personal opening line is given; personal or testimonial scripts are built as beat sheets and filmed as interviews, not word for word scripts",
     "category": "DONE",
     "subcategory": "CONTENT / WORKFLOW",
     "assignee": "Unassigned",
     "status": "done",
     "notes": "",
-    "createdAt": 1786574150788
+    "createdAt": 1786578217678
   }
 ];
 
@@ -1039,6 +909,8 @@ function parseImportText(raw) {
   const lines = raw.split(/\r?\n/);
   const dividerRe = /^=+$/;
   const taskRe = /^\[( |x|X)\]\s+(.*)$/;
+  const assigneeSuffixRe = /\s*\(Assigned:\s*([^)]+)\)\s*$/i;
+  const noteLineRe = /^\s{2,}Note:\s*(.*)$/i;
   const tasks = [];
   let currentCategory = null;
   let currentSub = null;
@@ -1047,8 +919,8 @@ function parseImportText(raw) {
   let order = 0;
   const base = Date.now();
 
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
+  for (let idx = 0; idx < lines.length; idx++) {
+    const line = lines[idx].trim();
 
     if (dividerRe.test(line)) {
       if (skipNextDivider) skipNextDivider = false;
@@ -1068,15 +940,31 @@ function parseImportText(raw) {
     const m = line.match(taskRe);
     if (m) {
       const status = m[1].toLowerCase() === 'x' ? 'done' : 'open';
-      const text = m[2].trim();
+      let text = m[2].trim();
+
+      let assignee = 'Unassigned';
+      const am = text.match(assigneeSuffixRe);
+      if (am) {
+        const candidate = am[1].trim();
+        if (ASSIGNEES.includes(candidate)) assignee = candidate;
+        text = text.replace(assigneeSuffixRe, '').trim();
+      }
+
+      let notes = '';
+      const next = lines[idx + 1];
+      if (next) {
+        const nm = next.match(noteLineRe);
+        if (nm) { notes = nm[1].trim(); idx++; }
+      }
+
       tasks.push({
         id: uid(),
         text,
         category: currentCategory || 'Uncategorized',
         subcategory: currentSub,
-        assignee: 'Unassigned',
+        assignee,
         status,
-        notes: '',
+        notes,
         createdAt: base + (order++),
       });
       continue;
@@ -1131,18 +1019,15 @@ function exportTasks() {
 
     out += `${divider}\n${cat}\n${divider}\n\n`;
 
-    const sorted = [...items].sort((a, b) => (a.createdAt || 0) - (b.createdAt || 0));
-    let lastSub;
-    for (const t of sorted) {
-      if (t.subcategory !== lastSub) {
-        if (t.subcategory) out += `${t.subcategory}\n\n`;
-        lastSub = t.subcategory;
+    for (const bucket of bucketBySubcategory(items)) {
+      if (bucket.subcategory) out += `${bucket.subcategory}\n\n`;
+      for (const t of sortItems(bucket.items)) {
+        const box = t.status === 'done' ? '[x]' : '[ ]';
+        const assigneeTag = t.assignee && t.assignee !== 'Unassigned' ? ` (Assigned: ${t.assignee})` : '';
+        out += `${box} ${t.text}${assigneeTag}\n`;
+        if (t.notes) out += `    Note: ${t.notes}\n`;
+        out += '\n';
       }
-      const box = t.status === 'done' ? '[x]' : '[ ]';
-      const assigneeTag = t.assignee && t.assignee !== 'Unassigned' ? ` (Assigned: ${t.assignee})` : '';
-      out += `${box} ${t.text}${assigneeTag}\n`;
-      if (t.notes) out += `    Note: ${t.notes}\n`;
-      out += '\n';
     }
   }
 
@@ -1156,6 +1041,41 @@ function exportTasks() {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
   showToast('Exported.');
+}
+
+// ---------- Grouping ----------
+
+// Buckets a category's tasks by subcategory explicitly, rather than relying on
+// sort-order adjacency. That adjacency approach was the bug: a task with no
+// subcategory would silently render right under whichever subheader happened
+// to land above it after sorting, making it look misfiled. Explicit bucketing
+// means a task only ever appears under a subcategory it actually has.
+function bucketBySubcategory(items) {
+  const buckets = new Map();
+  const order = [];
+  items.forEach(t => {
+    const key = t.subcategory || null;
+    if (!buckets.has(key)) {
+      buckets.set(key, []);
+      order.push(key);
+    }
+    buckets.get(key).push(t);
+  });
+  order.sort((a, b) => {
+    if (a === null) return -1;
+    if (b === null) return 1;
+    const aMin = Math.min(...buckets.get(a).map(t => t.createdAt || 0));
+    const bMin = Math.min(...buckets.get(b).map(t => t.createdAt || 0));
+    return aMin - bMin;
+  });
+  return order.map(key => ({ subcategory: key, items: buckets.get(key) }));
+}
+
+function sortItems(items) {
+  return [...items].sort((a, b) => {
+    if (a.status !== b.status) return a.status === 'done' ? 1 : -1;
+    return (a.createdAt || 0) - (b.createdAt || 0);
+  });
 }
 
 // ---------- Rendering ----------
@@ -1177,10 +1097,6 @@ function getFilteredGrouped() {
   for (const cat of allCats) {
     const items = tasks.filter(t => t.category === cat);
     if (!items.length) continue;
-    items.sort((a, b) => {
-      if (a.status !== b.status) return a.status === 'done' ? 1 : -1;
-      return (a.createdAt || 0) - (b.createdAt || 0);
-    });
     grouped.push({ category: cat, items });
   }
   return grouped;
@@ -1210,29 +1126,31 @@ function render() {
         <span class="cat-num${isUrgent ? ' is-urgent' : ''}">${numStr}</span>
         <h2 class="cat-title">${escapeHtml(group.category)}</h2>
         <span class="cat-count">${openCount} open</span>
+        <button class="cat-delete" data-action="delete-category" data-category="${escapeHtml(group.category)}" aria-label="Delete this whole category">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 3.5H11.5M5 3.5V2.3C5 1.8 5.4 1.4 5.9 1.4H8.1C8.6 1.4 9 1.8 9 2.3V3.5M6 6.3V10.2M8 6.3V10.2M3.3 3.5L3.9 11.4C3.94 12 4.4 12.4 5 12.4H9C9.6 12.4 10.06 12 10.1 11.4L10.7 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
       <div class="cat-tasks">`;
 
-    let lastSub;
-    group.items.forEach(t => {
-      if (t.subcategory && t.subcategory !== lastSub) {
-        html += `<p class="cat-sub">${escapeHtml(t.subcategory)}</p>`;
+    bucketBySubcategory(group.items).forEach(bucket => {
+      if (bucket.subcategory) {
+        html += `<p class="cat-sub">${escapeHtml(bucket.subcategory)}</p>`;
       }
-      lastSub = t.subcategory;
-
-      const done = t.status === 'done';
-      html += `<div class="task-card${done ? ' is-done' : ''}${isUrgent ? ' is-urgent-cat' : ''}" data-id="${t.id}">
-        <button class="task-check" data-action="toggle" data-id="${t.id}" aria-label="${done ? 'Mark open' : 'Mark done'}">
-          ${done ? '<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2L4.8 9L10 3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>' : ''}
-        </button>
-        <div class="task-body" data-action="edit" data-id="${t.id}">
-          <p class="task-text">${escapeHtml(t.text)}</p>
-          ${t.notes ? `<p class="task-notes">${escapeHtml(t.notes)}</p>` : ''}
-          <div class="task-meta">
-            <span class="badge assignee-${assigneeSlug(t.assignee)}">${escapeHtml(t.assignee || 'Unassigned')}</span>
+      sortItems(bucket.items).forEach(t => {
+        const done = t.status === 'done';
+        html += `<div class="task-card${done ? ' is-done' : ''}${isUrgent ? ' is-urgent-cat' : ''}" data-id="${t.id}">
+          <button class="task-check" data-action="toggle" data-id="${t.id}" aria-label="${done ? 'Mark open' : 'Mark done'}">
+            ${done ? '<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.2L4.8 9L10 3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>' : ''}
+          </button>
+          <div class="task-body" data-action="edit" data-id="${t.id}">
+            <p class="task-text">${escapeHtml(t.text)}</p>
+            ${t.notes ? `<p class="task-notes">${escapeHtml(t.notes)}</p>` : ''}
+            <div class="task-meta">
+              <span class="badge assignee-${assigneeSlug(t.assignee)}">${escapeHtml(t.assignee || 'Unassigned')}</span>
+            </div>
           </div>
-        </div>
-      </div>`;
+        </div>`;
+      });
     });
 
     html += `</div></section>`;
@@ -1340,6 +1258,7 @@ function saveTaskFromModal() {
     const t = state.tasks.find(x => x.id === state.editingId);
     if (t) {
       t.text = text;
+      if (t.category !== category) t.subcategory = null;
       t.category = category;
       t.assignee = assignee;
       t.notes = notes;
@@ -1371,6 +1290,18 @@ function deleteTask() {
   renderChips();
   render();
   closeModal();
+}
+
+function deleteCategory(category) {
+  const count = state.tasks.filter(t => t.category === category).length;
+  if (!count) return;
+  const ok = confirm(`Delete all ${count} task${count === 1 ? '' : 's'} in "${category}"? This can't be undone.`);
+  if (!ok) return;
+  state.tasks = state.tasks.filter(t => t.category !== category);
+  saveTasks();
+  renderChips();
+  render();
+  showToast(`Deleted ${count} task${count === 1 ? '' : 's'} from ${category}.`);
 }
 
 function toggleTaskStatus(id) {
@@ -1420,6 +1351,8 @@ function bindEvents() {
   document.getElementById('list').addEventListener('click', e => {
     const toggleBtn = e.target.closest('[data-action="toggle"]');
     if (toggleBtn) { toggleTaskStatus(toggleBtn.dataset.id); return; }
+    const deleteCatBtn = e.target.closest('[data-action="delete-category"]');
+    if (deleteCatBtn) { deleteCategory(deleteCatBtn.dataset.category); return; }
     const editArea = e.target.closest('[data-action="edit"]');
     if (editArea) {
       const t = state.tasks.find(x => x.id === editArea.dataset.id);

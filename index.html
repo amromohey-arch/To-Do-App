@@ -15,6 +15,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- Fill these in from your Supabase project (Settings -> API), see README -->
+<script>
+  window.SUPABASE_URL = 'https://uxvotzdignhnotwgyqfg.supabase.co';
+  window.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4dm90emRpZ25obm90d2d5cWZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2MDU5NTMsImV4cCI6MjEwMjE4MTk1M30.c-CZhFaVwZ8i8NvgOvsTpeWrK4n3JW6s7Mu4HjQhEl8';
+</script>
 </head>
 <body>
 
@@ -22,11 +28,20 @@
   <form id="gateForm" class="gate-card">
     <p class="gate-eyebrow">618 Media</p>
     <h1 class="gate-title">Action Plan</h1>
-    <p class="gate-copy">Enter the passphrase to continue.</p>
-    <input id="gateInput" type="password" inputmode="text" autocomplete="off" placeholder="Passphrase" class="gate-input">
-    <button type="submit" class="btn btn-primary gate-submit">Unlock</button>
-    <p id="gateError" class="gate-error" hidden>Wrong passphrase. Try again.</p>
+    <p class="gate-copy">Log in to see the shared list.</p>
+    <input id="gateEmail" type="email" inputmode="email" autocomplete="username" placeholder="Email" class="gate-input">
+    <input id="gateInput" type="password" autocomplete="current-password" placeholder="Password" class="gate-input">
+    <button type="submit" class="btn btn-primary gate-submit">Log in</button>
+    <p id="gateError" class="gate-error" hidden>Couldn't log in. Check your email and password.</p>
   </form>
+</div>
+
+<div id="loadingScreen" class="gate" hidden>
+  <div class="gate-card">
+    <p class="gate-eyebrow">618 Media</p>
+    <h1 class="gate-title">Action Plan</h1>
+    <p class="gate-copy" id="loadingText">Loading your tasks...</p>
+  </div>
 </div>
 
 <div id="app" class="app" hidden>
@@ -40,9 +55,12 @@
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="4" r="1.6" fill="currentColor"/><circle cx="10" cy="10" r="1.6" fill="currentColor"/><circle cx="10" cy="16" r="1.6" fill="currentColor"/></svg>
     </button>
     <div id="menuPanel" class="menu-panel" hidden>
+      <p id="menuUserLabel" class="menu-user-label"></p>
+      <button class="menu-item" data-action="history">History</button>
       <button class="menu-item" data-action="import">Import .txt</button>
       <button class="menu-item" data-action="export">Export .txt</button>
       <button class="menu-item menu-item-danger" data-action="reset">Reset all data</button>
+      <button class="menu-item" data-action="logout">Log out</button>
     </div>
     <input id="importFile" type="file" accept=".txt,text/plain" hidden>
   </header>
@@ -101,6 +119,20 @@
       <div class="modal-actions-right">
         <button id="cancelTaskBtn" class="btn btn-ghost">Cancel</button>
         <button id="saveTaskBtn" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="historyBackdrop" class="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
+    <div class="modal-handle"></div>
+    <h2 id="historyTitle" class="modal-title">History</h2>
+    <p class="suggest-hint" style="color: var(--grey); margin-top: -6px;">Last 100 changes, most recent first.</p>
+    <div id="historyList" class="history-list"></div>
+    <div class="modal-actions">
+      <div class="modal-actions-right" style="margin-left: 0;">
+        <button id="closeHistoryBtn" class="btn btn-ghost">Close</button>
       </div>
     </div>
   </div>
